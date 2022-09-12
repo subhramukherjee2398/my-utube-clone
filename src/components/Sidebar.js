@@ -3,7 +3,6 @@ import React from 'react'
 import { categories } from '../utils/constant'
 
 function Sidebar({selectedCategory,SetselectedCategory}) {
-    console.log(selectedCategory,SetselectedCategory)
     return (
         <Stack
             direction="row"
