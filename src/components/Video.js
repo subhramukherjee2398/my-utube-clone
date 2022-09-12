@@ -1,8 +1,9 @@
+import { Box, Stack } from '@mui/material'
 import React from 'react'
 
-function Video() {
+function Video({ videos }) {
   return (
-    <div>Video</div>
+    <div style={{color:'white'}}>nvdnfsdnhvndfbvk</div>
   )
 }
 
