@@ -4,10 +4,10 @@ import ChannelCard from './ChannelCard';
 import Loader from './Loader';
 import VideoCard from './VideoCard'
 
-function Video({ videos }) {
+function Video({ videos, direction }) {
   if(!videos?.length) return <Loader />;
   return (
-    <Stack flexWrap="wrap" justifyContent="start" alignItems="start" gap={2} flexDirection='row'>
+    <Stack direction={direction || "row"} flexWrap="wrap" justifyContent="start" alignItems="start" gap={2}>
       {videos.map((item, id) => (
           <Box key={id}>
             {item?.id?.videoId && <VideoCard video={item} />}
