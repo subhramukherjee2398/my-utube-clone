@@ -1,7 +1,6 @@
 import { Box, Stack, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import ReactPlayer from 'react-player'
-import { Link } from 'react-router-dom'
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { FetchDataFromApi } from '../utils/FetchDataFromApi';
 import Video from './Video';
@@ -13,7 +12,7 @@ function VideoDetail() {
 
   useEffect(() => {
     FetchDataFromApiforVideo();
-  }, [id])
+  }, [])
 
   const FetchDataFromApiforVideo = async () => {
     console.log('call', id)
